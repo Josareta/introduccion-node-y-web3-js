@@ -41,7 +41,7 @@ app.get("/api/productos", (req,res) => {
 })     
 
 // Ruta POST para crear un nuevo producto
-app.post("/api/productos/add", (req, res) => {
+app.post("/api/productos", (req, res) => {
     //Obtenemos el producto a agregar desde el cuerpo de la solicitud (req.body).
     const nuevoProducto = { id: 5, nombre: "Producto 5", cantidad : 5 }
     // Agregamos el nuevo producto en la base de datos.
